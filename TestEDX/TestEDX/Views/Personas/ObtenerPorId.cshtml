@@ -1,0 +1,32 @@
+﻿@model TestEDX.Models.Personas
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Persona</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ApPaterno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ApMaterno)
+        </dt>
+
+       
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar Persona", "EditarPersona", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "ListadoPersonas")
+</p>
+

@@ -1,0 +1,33 @@
+2022-01-14 23:09:25,573 [16] INFO  App  
+ Metodo Informativo 
+ 
+2022-01-14 23:12:42,789 [4] INFO  App  
+ Metodo Informativo 
+ 
+2022-01-14 23:28:07,760 [4] INFO  App  
+ Listando Personas 
+ 
+2022-01-14 23:28:16,332 [4] INFO  App  
+ Listando Personas 
+ 
+2022-01-14 23:28:18,768 [13] INFO  App  
+ <Get> Obtener Persona 
+ 
+2022-01-14 23:28:19,008 [13] INFO  App  
+ Return PersonaTestEDX.Models.Personas 
+ 
+2022-01-14 23:28:22,871 [17] INFO  App  
+ Listando Personas 
+ 
+2022-01-14 23:28:25,266 [13] INFO  App  
+ <Get> Editar Persona 
+ 
+2022-01-14 23:28:29,866 [12] INFO  App  
+ Listando Personas 
+ 
+2022-01-14 23:28:31,652 [17] INFO  App  
+ <Get> Eliminar Persona 
+ 
+2022-01-14 23:28:33,550 [13] INFO  App  
+ Listando Personas 
+ 

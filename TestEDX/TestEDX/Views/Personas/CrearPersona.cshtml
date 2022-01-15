@@ -1,0 +1,53 @@
+﻿@model TestEDX.Models.Personas
+            @using (Html.BeginForm("CrearPersona", "Personas", FormMethod.Post, new { role = "form" }))
+            {
+                <form class="m-form m-form--fit m-form--label-align-right">
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="m-portlet__body">
+
+
+                        <div class="form-group m-form__group">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label>Nombre  </label>
+                                    <div class="m-input-icon m-input-icon--left">
+
+                                        @Html.EditorFor(model => model.Nombre, new { htmlAttributes = new { @class = "form-control  m-input"} })
+                                        @Html.ValidationMessageFor(model => model.Nombre, "", new { @class = "text-danger" })
+                                        <span class="m-input-icon__icon m-input-icon__icon--left"><span><i class="la la-tag"></i></span></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label>Apellidos Paterno</label>
+                                    <div class="m-input-icon m-input-icon--left m-input-icon--right">
+                                        @Html.EditorFor(model => model.ApPaterno, new { htmlAttributes = new { @class = "form-control m-input" } })
+                                        @Html.ValidationMessageFor(model => model.ApPaterno, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label>Apellido Materno</label>
+                                    <div class="m-input-icon m-input-icon--left m-input-icon--right">
+                                        @Html.EditorFor(model => model.ApMaterno, new { htmlAttributes = new { @class = "form-control m-input" }})
+                                        @Html.ValidationMessageFor(model => model.ApMaterno, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                         
+                        </div>
+
+
+
+
+
+
+                    </div>
+                    <div class="m-portlet__foot m-portlet__foot--fit">
+                        <div class="m-form__actions">
+                            <input type="submit" class="btn btn-success" value="Guardar" />
+                            <a class="btn btn-secondary" href="@Url.Action("ListadoPersonas")">Cancelar</a>
+                        </div>
+                    </div>
+                </form>
+            }
+

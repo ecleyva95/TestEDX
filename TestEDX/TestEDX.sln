@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestEDX", "TestEDX\TestEDX.csproj", "{EDB1A8CC-839C-4FBC-B212-B4D55C6BB5AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDB1A8CC-839C-4FBC-B212-B4D55C6BB5AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDB1A8CC-839C-4FBC-B212-B4D55C6BB5AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDB1A8CC-839C-4FBC-B212-B4D55C6BB5AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDB1A8CC-839C-4FBC-B212-B4D55C6BB5AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {035673D2-BFBA-4A4F-8232-4EB9B2227E0C}
+	EndGlobalSection
+EndGlobal

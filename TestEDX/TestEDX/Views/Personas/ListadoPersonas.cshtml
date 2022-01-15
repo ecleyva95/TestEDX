@@ -1,0 +1,68 @@
+﻿@model List<TestEDX.Models.Personas>
+
+<style>
+    table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid purple;
+}
+
+
+th, td {
+  padding: 20px;
+}
+
+
+
+
+
+table {
+  background-color: aliceblue;
+}
+</style>
+
+<body>
+    <p>
+    @Html.ActionLink("Crear Persona", "CrearPersona")
+</p>
+    <table>
+ <thead>
+                <tr>
+                    <th >Nombre</th>
+                    <th >ApMaterno</th>
+                    <th >ApPaterno</th>
+                     <th>Acciones</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nombre)
+                    </td>
+                     <td>
+                        @Html.DisplayFor(modelItem => item.ApPaterno)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ApMaterno)
+                    </td>
+                   
+                   <td>
+                      
+                       <a href="@Url.Action("ObtenerPorId","Personas",new {id = item.Id})"> Detalles</a>  
+                       <a href="@Url.Action("EditarPersona","Personas",new {id = item.Id})">Editar</a>  
+                       <a href="@Url.Action("EliminarPersona","Personas",new {id = item.Id})"> Eliminar</a>  
+                      
+                   </td>
+                    </tr>
+                }
+            </tbody>
+  
+</table>
+
+
+
+</body>

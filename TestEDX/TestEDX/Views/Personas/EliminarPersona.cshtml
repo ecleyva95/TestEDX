@@ -1,0 +1,66 @@
+﻿@model TestEDX.Models.Personas
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+
+
+
+
+
+<div class="row">
+    <div class="col-lg-8">
+
+        <!--begin::Portlet-->
+        <div class="m-portlet m-portlet--creative m-portlet--first m-portlet--bordered-semi">
+            <div class="m-portlet__head">
+                <div class="m-portlet__head-caption">
+                    <div class="m-portlet__head-title">
+                        <span class="m-portlet__head-icon m--hide">
+                            <i class="flaticon-statistics"></i>
+                        </span>
+                        <h3 class="m-portlet__head-text">
+                            <i class="flaticon-exclamation m--font-warning"></i>   Desea eliminar la persona?
+                        </h3>
+                        <h2 class="m-portlet__head-label m-portlet__head-label--success">
+                            <span>@Model.Nombre</span>
+                           
+                        </h2>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="m-portlet__body">
+                <form class="m-form m-form--fit m-form--label-align-right">
+                    <div class="m-portlet__body">
+
+                    </div>
+                    <div class="m-portlet__foot m-portlet__foot--fit">
+
+                    </div>
+
+                </form>
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+                     @Html.HiddenFor(model => model.Id)
+                    <div class="form-actions no-color">
+                        <input type="submit" value="Eliminar" class="btn btn-danger" />
+                        <a class="btn btn-secondary" href="@Url.Action("ListadoPersonas","Personas")">Cancelar</a>
+
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!--end::Portlet-->
+
+    </div>
+
+</div>
+
+
+
+
+
